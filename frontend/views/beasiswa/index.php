@@ -11,6 +11,8 @@ $this->title = 'Beasiswa';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="beasiswa-index">
+    <div class="card" style="margin-top:15px;">
+    <div class="card-body">
 
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
@@ -34,5 +36,7 @@ $this->params['breadcrumbs'][] = $this->title;
            // ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
+    </div>
+    </div>
 
 </div>
