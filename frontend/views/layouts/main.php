@@ -122,13 +122,83 @@ AppAsset::register($this);
     </div>
 </div>
 
-<footer class="footer">
-    <div class="container">
-        <p class="pull-left">&copy; UIN Sultan Syarif Kasim Riau. <?= date('Y') ?></p>
+<footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col l12 col m12 col s12">
+                        <!-- Footer Button -->
+                        <div class="footer-button center-align">
+                            
+                        </div>
+                    </div>
+  
+                    <div class="col l12 col m12 col s12">
+                        <div class="row" style="color: white">
+                            
+                            <!-- about -->
+                            <div class="col-md-4">
+                                <h3>KKN Online</h3>
+                                <p style="color:white">KKN Online di bawah naungan LPPM UIN SUSKA sebagai aplikasi pendukung dalam pendaftaran KKN di lingkungan civitas akademik UIN SUSKA Riau</p>
+                            </div>
+                            <!-- ./about -->
+                            
+                            <!-- quick links -->
+                            <div class="col-md-4">
+                                <h3>Quick links</h3>
+                                
+                                <div class="list-links">
+                                    <a href="http://alumni.uin-suska.ac.id/">Home</a>                               
+                                    <a href="http://uin-suska.ac.id">UIN SUSKA</a>
+                                    <a href="http://lppm.uin-suska.ac.id/">LPPM</a>
+                                </div>                                
+                            </div>
+                            <!-- ./quick links -->
+                            
+                            <!-- contacts -->
+                             <div class="col-md-4">
+                                <h3>Contacts</h3>
+                                
+                                <div class="footer-contacts">
+                                    <div class="fc-row">
+                                        <span class="fa fa-home"></span>
+                                        Gedung Islamic Center UIN Suska Lantai Dasar<br> 
+                                        Jl. Subrantas Km. 15, Pekanbaru, 28293 <br>                                         Telp : 0761-562223 
+                                    </div>
+                                    <div class="fc-row">
+                                        <span class="fa fa-phone"></span>
+                                         0761-28293
+                                    </div>
+                                    <div class="fc-row">
+                                        <span class="fa fa-envelope"></span>
+                                        <strong>LPPM UIN SUSKA</strong><br>
+                                        <a href="mailto:pusdimas.lppm@uin-suska.ac.id">pusdimas.lppm@uin-suska.ac.id</a>
+                                    </div>                                    
+                                </div>
+                                
+                            </div>
+                            <!-- ./contacts -->
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Footer Bottom -->
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="row">
+                    <!-- Copyright Text -->
+                    <div class="col l4 col m12 col s12">
+                        &copy; UIN Suska <?= date('Y') ?>
+                    </div>
+                    
+                    
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-        <p class="pull-right"><?= Yii::powered() ?></p>
-    </div>
-</footer>
+
 
 <?php $this->endBody() ?>
 </body>
