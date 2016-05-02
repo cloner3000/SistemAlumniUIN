@@ -65,7 +65,7 @@ AppAsset::register($this);
                         ['label' => 'Alumni', 'url' => ['/alumni']], 
                         ['label' => 'Berita', 'url' => ['/berita']],
                         ['label' => 'Peluang Beasiswa', 'url' => ['/beasiswa']], 
-                        ['label' => 'Perusahaan Mitra', 'url' => ['/Perusahaan Mitra']],           
+                        ['label' => 'Perusahaan Mitra', 'url' => ['/PerusahaanMitra']],           
                     ], 
                     'visible' => Yii::$app->user->can('alumni')
                 ],
@@ -98,7 +98,7 @@ AppAsset::register($this);
             . Html::beginForm(['/site/logout'], 'post')
             . Html::submitButton(
                 'Logout (' . Yii::$app->user->identity->username . ')',
-                ['class' => 'btn btn-link']
+                ['class' => 'btn btn-link', 'style' => 'text-transform: none']
             )
             . Html::endForm()
             . '</li>';
