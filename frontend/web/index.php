@@ -14,5 +14,7 @@ $config = yii\helpers\ArrayHelper::merge(
     require(__DIR__ . '/../config/main-local.php')
 );
 
+echo '<link rel="shortcut icon" href="'.Yii::$app->request->baseUrl.'assets/img/fav.png" type="image/x-icon" />';
+
 $application = new yii\web\Application($config);
 $application->run();
