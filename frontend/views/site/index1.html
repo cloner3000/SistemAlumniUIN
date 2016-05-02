@@ -1,0 +1,31 @@
+<?php
+use yii\helpers\Html;
+use yii\grid\GridView;
+use yii\web\View;
+/* @var $this yii\web\View */
+$this->title = 'Sistem Alumni UIN SUSKA RIAU';
+$this->registerJs("$(document).ready(function() {
+$('.pgwSlider').pgwSlider(displayList=false);
+});", View::POS_END);
+?>
+
+<div class="site-index">
+	<div class="container">
+		<div class="row">
+			<ul class="pgwSlider">
+	          <?php
+	          foreach ($berita as $key) {
+	          # code...
+	          echo '
+	          <li>
+	            <a href="'.Yii::$app->homeUrl.'berita/bacaberita?id='.$key->kode.'" target="_blank">
+	              '. Html::img(Yii::$app->homeUrl."../uploads/berita/gambar/$key->gambar", ['min-height' => '600', 'alt' => '<h2>'.$key->judul.'</h2>']) .'
+	            </a>
+	          </li>
+	          ';
+	          }
+	          ?>
+	        </ul>
+		</div>
+	</div>
+</div>
