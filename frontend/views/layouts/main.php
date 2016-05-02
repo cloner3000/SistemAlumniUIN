@@ -28,7 +28,7 @@ AppAsset::register($this);
 <div class="wrap">
     <?php 
     NavBar::begin([
-        'brandLabel' => Html::img(Yii::$app->homeUrl.'assets/img/logo.jpg', ['width' => '60']).'Si',
+        'brandLabel' => Html::img(Yii::$app->homeUrl.'assets/img/logo0.png', ['height' => '60', 'style' => 'float:left']),
         //'brandLabel' => '<img src="'.Yii::$app->homeUrl.'assets/img/logo.jpg" height=30 width=30>Sistem Alumni UIN SUSKA RIAU',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
